@@ -1,0 +1,30 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails and system files
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# AFP shares and iCloud
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+
+*.mvn
+mvnw*
+.gitattributes
+*.iml
+HELP.md
+/target
