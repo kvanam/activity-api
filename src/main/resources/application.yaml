@@ -1,3 +1,25 @@
 spring:
-  application:
-    name: activity-api
+  application.name: activity-api
+  jackson.serialization.indent_output: true
+
+management:
+  endpoints.web.exposure.include:
+    - "*"
+  enpoints.health.show-details: always
+  health.circuitbreaker.enabled: true
+
+# https://resilience4j.readme.io/docs/circuitbreaker#create-and-configure-a-circuitbreaker
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 5000
+        failureRateThreshold: 50
+        eventConsumerBufferSize: 10
+    instances:
+      activityApiCircuitBreaker:
+        baseConfig: default
