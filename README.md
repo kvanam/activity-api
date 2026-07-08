@@ -259,11 +259,10 @@ mvn clean install
 
 ## References
 
-- [Spring Boot Documentation](https://docs.spring.io/spring-boot/4.1.0/reference/)
-- [Spring Web Guide](https://docs.spring.io/spring-boot/4.1.0/reference/web/servlet.html)
-- [Spring Boot Actuator](https://docs.spring.io/spring-boot/4.1.0/reference/actuator/index.html)
-- [Bored API Documentation](https://www.boredapi.com/documentation)
-- [Maven Documentation](https://maven.apache.org/guides/index.html)
+- [Bored API Documentation](https://www.boredapi.com/)
+- [Actuator Ref](https://github.com/resilience4j/resilience4j/issues/2350)
+- [Resilience4j Documentation](https://resilience4j.readme.io/docs)
+- [Youtube ref] (https://www.youtube.com/watch?v=3-ChrD3Zosg)
 
 ## License
 
